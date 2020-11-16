@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color table</title>
+    <style>
+       td, th{
+            border: solid;
+        }
+        .write{
+            font-weight: bold;
+            text-align:right;
+        }
+        .engname{
+            text-align: center;
+        }
+        .main_color{
+            background-color: blue;
+        }
+        .main_image{
+            background-image: url(blue.jfif);
+            background-size: cover;
+        }
+        .dark_color{
+            background-color: rgb(25, 25, 122);
+        } 
+        .dark_image{
+            background-image: url(midnightblue.jfif);
+            background-position: center;
+            background-size: cover;
+        }
+        .royal_color{
+            background-color: rgb(65,105,225);
+        }
+        .royal_image{
+            background-image: url(royal-blue.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .corn_color{
+            background-color: cornflowerblue;
+        }
+        .corn_image{
+            background-image: url(corn.jfif);
+            background-position: center;
+            background-size: cover;
+        }
+        .slate_color{
+            background-color: mediumslateblue;
+        }
+        .slate_image{
+            background-image: url(slate.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+         </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>NAME</th>
+                <th>RGB</th>
+                <th>HEX</th>
+                <th>color</th>
+                <th>image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="write">Синий</td>
+                <td class="engname">blue</td>
+                <td>rgb(0,0,255)</td>
+                <td>#0000FF</td>
+                <td class="main_color"></td>
+                <td class="main_image"></td>
+            </tr>
+            <tr>
+                <td class="write">Тёмно-синий</td>
+                <td class="engname">midnightblue</td>
+                <td>rgb(25,25,112)</td>
+                <td>#191970</td>
+                <td class="dark_color"></td>
+                <td class="dark_image"></td>
+            </tr>
+            <tr>
+                <td class="write">Королевский синий</td>
+                <td class="engname">royalblue</td>
+                <td>rgb(65,105,225)</td>
+                <td>#4169E1</td>
+                <td class="royal_color"></td>
+                <td class="royal_image"></td>
+            </tr>
+            <tr>
+                <td class="write">Васильковый</td>
+                <td class="engname">cornflowerblue</td>
+                <td>rgb(100,149,237)</td>
+                <td>#6495ED</td>
+                <td class="corn_color"></td>
+                <td class="corn_image"></td>
+            </tr>
+            <tr>
+                <td class="write">Умеренный аспидно-синий</td>
+                <td class="engname">mediumslateblue</td>
+                <td>rgb(123,104,238)</td>
+                <td>#7B68EE</td>
+                <td class="slate_color"></td>
+                <td class="slate_image"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

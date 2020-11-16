@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;/* underline| overline| line-through| none*/
+        color: inherit;
+    }
+.box{
+    background:cadetblue;
+    width:300px ;/*px, %, vh - vieport height, vw - vieport width*/
+    /*height: 100vh;/* высота - лучше в процентах не использовать!*/
+    /*height: 100px;
+    min-height: 100px;
+    max-height: 200px;*/
+    overflow: auto;/*выпадение контента из блока: visible| hidden| scroll| auto*/
+    border-width: 5px;
+    border-color: crimson;
+    border-style:solid ;/* стиль рамочки: none| solid|- прямая сплошная линия| double| dotted| dashed*/
+    border: solid 5px;
+    border-right-style: dashed;
+    text-align: justify;
+    line-height: 1;
+    padding: 20px 100px 50px;/*внутрненний отсутп*/
+    margin:30px auto 100px;
+}
+.menu{
+    width: 510px;
+    margin: 0 auto;
+    background: darkmagenta;
+    list-style-type: none;/* none - удаляет маркеры| disk| square| circle */
+    font-size: 0; /*чтобы убрать пробелы между li и чтобы все встало в сточку*/
+}
+.menu li{
+    /* для тегов li внутри тегов с классом menu*/
+     height: 50px;
+     width: calc(100% / 3 - 2px);
+     border: 1px solid;
+     font: 20px/ 50px sans-serif;
+     text-align: center;
+     display: inline-block ;/*block| inline| inline-block */
+    }
+    .menu a{
+        background: cyan;
+        display: block;
+    }
+    .menu a:hover {
+        background: violet;
+    }
+</style>
+</head>
+<body>
+    <!--ul.menu>li*3>a{link $}-->
+    <ul class="menu">
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 2</a></li>
+        <li><a href="">link 3</a></li>
+    </ul>
+    <!-- .box>lorem85 -->
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam laboriosam aliquid ab tempora molestias, quam deleniti atque soluta quo libero dolor corrupti dolorum, esse doloribus quisquam quos at provident labore? Harum veritatis repudiandae odit iure necessitatibus incidunt expedita, saepe nemo quae velit esse reiciendis suscipit totam magni! Reprehenderit, voluptatem amet. Et dignissimos rem magni. Sunt amet quibusdam eum dolore labore earum, itaque ullam ea fugit ipsam rem maxime reiciendis quae et? Id nobis recusandae voluptatibus ab quaerat ut in atque sequi qui? Numquam, ipsam eum.</div>
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam laboriosam aliquid ab tempora molestias, quam deleniti atque soluta quo libero dolor corrupti dolorum, esse doloribus quisquam quos at provident labore? Harum veritatis repudiandae odit iure necessitatibus incidunt expedita, saepe nemo quae velit esse reiciendis suscipit totam magni! Reprehenderit, voluptatem amet. Et dignissimos rem magni. Sunt amet quibusdam eum dolore labore earum, itaque ullam ea fugit ipsam rem maxime reiciendis quae et? Id nobis recusandae voluptatibus ab quaerat ut in atque sequi qui? Numquam, ipsam eum.</div>
+</body>
+</html>

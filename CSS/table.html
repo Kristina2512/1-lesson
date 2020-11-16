@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, td, th{
+            border: solid;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background: blueviolet;
+        }
+        .tbl {
+            margin-top: 50px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <!--th- table head(ячейки с заголовками)-->
+                <th><div class="box"></div></th>
+                <th>Столбец 2</th>
+                <th>Столбец 3</th>
+                <th>Столбец 4</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!--tr-table row-->
+        <tr>
+            <!--td - table data-->
+            <td rowspan="2">Ячейка1</td>
+            <td>Ячейка2</td>
+            <td>Ячейка3</td>
+        </tr>
+        <!--tr*2>td*3{Ячейка $@4}-->
+        <tr>
+            <td>Ячейка 4</td>
+            <td>Ячейка 5</td>
+            <td>Новая</td>
+            <td>Ячейка 6</td>
+        </tr>
+        <tr>
+            <td>Ячейка 7</td>
+            <td>Ячейка 8</td>
+            <td colspan="2">Ячейка 9</td>
+        </tr>
+    </tbody>
+    </table>
+    <!--table.tbl>tr>th{$}*4^tr*4>td{$}*4-->
+    <table class="tbl">
+        <caption>Лаба</caption>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td rowspan="2" colspan="2">22-23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>42</td>
+            <td>43</td>
+            <td>44</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

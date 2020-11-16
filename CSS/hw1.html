@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework1</title>
+   
+</head>
+<body>
+    <h1>Закажите сайт!</h1>
+    <form action=""method="GET">
+        Вас зовут <input type="text" name='user-name'><br>
+        Ваш электронный адрес <input type="text" name="mail"><br>
+        Тип сайта 
+        <select name="type">
+            <option>интернет магазин</option>
+        </select>
+        <fieldset>
+            <legend> Параметры заказа</legend>
+            <label>
+             <input type="checkbox" name="parametres" value="Мобильная версия"> Мобильная версия</label><br>
+            <label><input type="checkbox" name="parametres" value="Версия для печати"> Версия для печати</label><br>
+            <label><input type="checkbox" name="parametres" value="Динамические эффекты"> Динамические эффекты</label><br>
+            <label><input type="checkbox" name="parametres" value="Личный кабинет пользователя"> Личный кабинет пользователя</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Соответствие стандартам </legend>
+            <label><input type="radio" name="standarts" value="HTML 5"> HTML 5</label><br>
+            <label><input type="radio" name="standarts" value="HTML 4.01 Strict"> HTML 4.01 Strict</label><br>
+            <label><input type="radio" name="standarts" value="XHTML 1.0 Transitional"> XHTML 1.0 Transitional</label><br>
+        </fieldset>
+        <legend>Примечания</legend>
+        <textarea name="comment" placeholder="Примечания" cols="40" rows="5">
+        </textarea><br>
+        <input type="submit" value="Заказать сайт!">
+    </form>
+    
+</body>
+</html>

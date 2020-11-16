@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы обратной связи</title>
+
+</head>
+<body>
+    <h1>Закажите суши!</h1>
+    <!--атрибут action - путь к файлу для обработки формы на сервере  -->
+     <form action="" method="GET">
+         Введите ваше имя: <input type="text"
+         name="usr-name"><br>
+         Введите город доставки:
+         <!-- <input type="text" name="city"><br>-->
+         <select name="city">
+             <option>Москва</option>
+             <option>Калуга</option>
+             <option>Видное</option>
+             <option>Балашиха</option>
+             <option selected>Подольск</option>
+         </select><br>
+         Введите адрес электронной почты: <input type="text"
+         name="usr-email"><br>
+         Введите номер телефона:<input type="text"
+         name="usr-tel"><br>
+         <input type="submit" value="Заказать суши">
+
+         <!--
+             input types:
+             text
+             tel
+             email
+             password
+
+             number
+             date
+             week
+             color
+             range
+
+             Кнопки
+             button
+             submit
+             reset
+             image
+         -->
+         <fieldset>
+         <legend>Способ оплаты</legend>
+         <label>
+         <input type="radio" name="pay" value="Наличные"> Наличными
+        </label>
+         <br>
+         <label>
+         <input type="radio" name="pay" value="Картой"> Картой
+        </label>
+        </fieldset>
+        <fieldset>
+         <legend>Выберите бонус</legend>
+         <input type="radio" name="bonus" value="Филадельфия">
+         Филадельфия<br>
+         <input type="radio" name="bonus" value="Дракон Маки">
+         Дракон Маки<br>
+         <input type="radio" name="bonus" value="Капа Маки">
+         Капа Маки
+        </fieldset>
+        <fieldset>
+         <legend>Выберите блюдо:</legend>
+         <input type="checkbox" name="dish_1" value="Стеклянная лапша"> Стеклянная лапша<br>
+         <input type="checkbox" name="dish_2" value="Том Ям"> Том Ям<br>
+         <input type="checkbox" name="dish_3"value="Калифорния"> Калифорния<br>
+         <input type="checkbox" name="dish_4"value="Мисо суп"> Мисо суп<br>
+        </fieldset>
+
+        <textarea name="comment" placeholder="Комментарий" cols="40" rows="5" style="resize: none;"></textarea>
+     </form>
+</body>
+</html>
