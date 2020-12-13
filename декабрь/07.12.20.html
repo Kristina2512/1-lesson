@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        meta атрибуты
+            charset - кодировка
+            name - название мета-тега
+            http-equiv - эмуляция заголовков от сервера 
+            content- место для значени, рабоатет в паре с атрибутом name или http-equiv
+    -->
+    <title>Meta</title>
+    <meta name="description" content="Описание страницы, как если бы пользователь искал ваш товар( до 128 символов)">
+    <meta name="keywords" content="карточки красивые персики сад плодовые деревья">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body{
+            margin:0;
+            background: peachpuff;
+        }
+        .wrapper{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .banner{
+            height: 500px;
+            background-image: url(../декабрь/depositphotos_8619199-stock-photo-peach-orchard.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .cards{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 40px 0 10px;
+        }
+        .item{
+            width: 270px;
+            height: 270px;
+            background: rgb(170, 91, 38);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px 2px rgba(0,0,0,.2);
+            font: 100px sans-serif;
+            line-height: 270px;
+            text-align: center;
+            color: peachpuff;
+            margin-bottom: 30px;
+        }
+        @media print { /*print, handheld, tv, braile,screen*/
+            .wrapper{
+                width: 100%;
+            }
+            body{
+                background: transparent;
+            }
+            .banner{
+                filter: grayscale(50%);
+            }
+            .item{
+                width: 150px;
+                height: 150px;
+                line-height: 150px;
+                box-shadow: none;
+                background: #FFF;
+                color: #000;
+                border: 1px solid;
+            }
+        }
+        @media (min-width: 500px) and (max-width: 700px){
+            body{
+                background: lightseagreen;
+            }
+            .wrapper{
+                padding: 0 20px;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">  </div>
+        <ul class="cards">
+            <li class="item">1</li>
+            <li class="item">2</li>
+            <li class="item">3</li>
+            <li class="item">4</li>
+            <li class="item">5</li>
+            <li class="item">6</li>
+            <li class="item">7</li>
+            <li class="item">8</li>
+        </ul>
+    </div>
+</body>
+</html>
